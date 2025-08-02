@@ -1,0 +1,57 @@
+h3{
+    padding-left: 400px;
+}
+.main{
+    border-bottom:0.5px solid rgb(225, 221, 221);
+    margin-left:100px;
+    width: 1100px;
+}
+
+.food1{
+    display:inline-block;
+    width:150px;
+    padding-left:2px;
+    vertical-align: top;
+}
+.food2{
+    display:inline-block;
+    width:150px;
+    padding-left:10px;
+    vertical-align: top;
+}
+.food3{
+    display:inline-block;
+    width:150px;
+    padding-left:10px;
+    vertical-align: top;
+}
+.food4{
+    display:inline-block;
+    width:150px;
+    padding-left:10px;
+    vertical-align: top;
+}
+img{
+    width: 150px;
+}
+div{
+    display: inline-block;
+    font-size: 10px;
+}
+
+.man1{
+    padding-left: 150px;
+}
+.last1{
+    padding-left: 150px;
+}
+.last2{
+    padding-left: 190px;
+}
+.last3>h3{
+    padding-left: 160px;
+    
+}
+.lastcon>p{
+    padding-left: 65px;
+}
