@@ -1,0 +1,110 @@
+.outer{
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+}
+.main{
+    display: inline-block;
+}
+.cont1{
+    display: inline-flex;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.box1{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 15px;
+}
+.mic1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    height: auto;
+}
+.mic2{
+    align-self: center;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.box2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+
+}
+.box3{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+}
+.box4{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+}
+.box5{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+}
+.box6{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+}
+.box7{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+}
+.box8{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+}
+.box9{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+  
+}
+.share{
+    display: flex;
+    gap: 15px;
+    padding-right: 10px;
+    /* border: 2px solid black; */
+    color: rgb(3, 3, 3);
+    background-color: greenyellow;
+    
+}
+.stop{
+    display: flex;
+    gap: 15px;
+    color: white;
+    width: 130px;
+    padding-left: 10px;
+    background-color: red;
+}
+.cont2{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
