@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 500px;
+            width:1000px;
+            border: 2px solid black;
+            display: block;
+            justify-content: space-between;
+        }
+        .child1{
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .child2{
+            padding-top: 60px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .chi1, .chi2, .chi3, .chi4 {
+            height: 150px;
+            width: 200px;
+            border: 2px solid black;
+            overflow: hidden; 
+            position: relative;
+        }
+
+        .chi1 img, .chi2 img, .chi3 img, .chi4 img {
+            height: 100%;
+            width: 100%;
+            transition: opacity 0.5s ease;
+            display: block;
+        }
+
+        .chi1:hover img,
+        .chi2:hover img,
+        .chi3:hover img,
+        .chi4:hover img {
+            opacity: 0; 
+        }
+
+        .chi1:hover{
+            background-color: orange;
+        }
+        .chi2:hover{
+            background-color: blue;
+        }
+        .chi3:hover{
+            background-color: green;
+        }
+        .chi4:hover {
+            background-color: gray;
+        }
+        .chi1:hover h3,
+        .chi2:hover h3,
+        .chi3:hover h3,
+        .chi4:hover h3{
+            opacity: 1;
+        }
+        .chi1 h3,.chi2 h3, .chi3 h3, .chi4 h3{
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0;
+            font-style: italic;
+            font-size: 30px;
+            color: white;
+            transition: opacity 0.5s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child1">
+            <div class="chi1">
+                <img src="https://i.pinimg.com/736x/27/29/cb/2729cb898bc3ec735fb62b5181eaca76.jpg" alt="" height="150px" width="200px">
+                <h3>Naruto</h3>
+            </div>
+            <div class="chi2">
+                <img src="https://i.redd.it/sbk4vawfo1ob1.jpg" alt="" height="150px" width="200px">
+                <h3>Luffy</h3>
+            </div>
+            <div class="chi3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsm9Z1ToatFrKaFPlwdcYd0AQYp7kF2ulGMQ&s" alt="" height="150px" width="200px">
+                <h3>Asta</h3>
+            </div>
+            <div class="chi4">
+                <img src="https://i.pinimg.com/736x/4d/10/eb/4d10eb4d81723343bfc7e3f9dac8f9aa.jpg" alt="" height="150px" width="200px">
+                <h3>Ichigo</h3>
+            </div>
+        </div>
+        <div class="child2">
+            <div class="chi1">
+                <img src="https://pm1.aminoapps.com/6493/8e7caf892a720f98952caf5f589e2c265458a291_hq.jpg" alt="" height="150px" width="200px">
+                <h3>Sasuke</h3>
+            </div>
+            <div class="chi2">
+                <img src="https://static.wikitide.net/deathbattlewiki/6/63/Portrait.roronoazoro.png" alt="" height="150px" width="200px">
+                <h3>Zoro</h3>
+            </div>
+            <div class="chi3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMfA0LytQqPjIyQq2WfgmMJFdazI6gMNQqRw&s" alt="" height="150px" width="200px">
+                <h3>Yuno</h3>
+            </div>
+            <div class="chi4">
+                <img src="https://cdn.staticneo.com/w/bleach/thumb/Uryu_Ishida.jpg/300px-Uryu_Ishida.jpg" alt="" height="150px" width="200px">
+                <h3>Uryu</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
