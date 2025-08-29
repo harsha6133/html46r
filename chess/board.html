@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Board</title>
+    <style>
+        .sup{
+            /* padding-left: 300px; */
+            display: flex;
+            justify-content: center;
+        }
+        .main{
+            border: 4px solid black;
+            display: flex;
+            height:823px;
+            width: 823px;
+        }
+        .child1 .child2 .child3 .child4 .child5 .child6 .child7 .child8{
+            display: flex;
+            border: 2px solid black;
+            height:100px;
+            width: 800px;
+            
+        }
+        .square{
+            border: 2px solid black;
+            height: 100px;
+            width: 100px;
+            transition: 0.3s ease;
+        }
+        
+        .child1>.square:nth-child(even){
+            background-color: aqua;
+        }
+        .child3>.square:nth-child(even){
+            background-color: aqua;
+        }
+        .child5>.square:nth-child(even){
+            background-color: aqua;
+        }
+        .child7>.square:nth-child(even){
+            background-color: aqua;
+        }
+        .child2>.square:nth-child(odd){
+            background-color: aqua;
+        }
+        .child4>.square:nth-child(odd){
+            background-color: aqua;
+        }
+        .child6>.square:nth-child(odd){
+            background-color: aqua;
+        }
+        .child8>.square:nth-child(odd){
+            background-color: aqua;
+        }
+        /* second block */
+        .child1>.square:nth-child(odd){
+            background-color: rgb(27, 164, 164);
+        }
+        .child3>.square:nth-child(odd){
+            background-color: rgb(27, 164, 164);
+        }
+        .child5>.square:nth-child(odd){
+            background-color: rgb(27, 164, 164);
+        }
+        .child7>.square:nth-child(odd){
+            background-color: rgb(27, 164, 164);
+        }
+        .child2>.square:nth-child(even){
+            background-color: rgb(27, 164, 164);
+        }
+        .child4>.square:nth-child(even){
+            background-color: rgb(27, 164, 164);
+        }
+        .child6>.square:nth-child(even){
+            background-color: rgb(27, 164, 164);
+        }
+        .child8>.square:nth-child(even){
+            background-color: rgb(27, 164, 164);
+        }
+        
+        .child1>.square:nth-child(even):hover{
+            background-color: rgb(4, 164, 164);
+        }
+        .child1>.square:nth-child(odd):hover{
+            background-color: aqua;
+        }
+        .child2>.square:nth-child(even):hover{
+            background-color: aqua;
+        }
+        .child2>.square:nth-child(odd):hover{
+            background-color: rgb(4, 164, 164);
+        }
+        .child3>.square:nth-child(even):hover{
+            background-color: rgb(4, 164, 164);
+        }
+        .child3>.square:nth-child(odd):hover{
+            background-color: rgb(4, 164, 164);
+        }
+        .child4>.square:nth-child(even):hover{
+            background-color: aqua;
+        }
+        .child4>.square:nth-child(odd):hover{
+            background-color: rgb(4, 164, 164);
+        }
+        .child5>.square:nth-child(even):hover{
+            background-color: rgb(4, 164, 164);
+        }
+        .child5>.square:nth-child(odd):hover{
+            background-color: aqua;
+        }
+        .child6>.square:nth-child(even):hover{
+            background-color: aqua;
+        }
+        .child6>.square:nth-child(odd):hover{
+            background-color: rgb(4, 164, 164);
+        }
+        .child7>.square:nth-child(even):hover{
+            background-color: rgb(4, 164, 164);
+        }
+        .child7>.square:nth-child(odd):hover{
+            background-color: aqua;
+        }
+        .child8>.square:nth-child(even):hover{
+            background-color: aqua;
+        }
+        .child8>.square:nth-child(odd):hover{
+            background-color: rgb(4, 164, 164);
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="sup">
+        <div class="main">
+        <div class="child1">
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/rook.png" alt="rook" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+            </div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square"><img width="50" height="50" src="https://img.icons8.com/ios/50/rook.png" alt="rook" style="padding-top: 20%;padding-left: 25%;"/></div>
+        </div>
+        <div class="child2">
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/knight.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/knight.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+        </div>
+        <div class="child3">
+            <div class="square"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/bishop.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/></div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square"><img width="50" height="50" src="https://img.icons8.com/ios/50/bishop.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/></div>
+        </div>
+        <div class="child4">
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/queen.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/king.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+        </div>
+        <div class="child5">
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/king.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/queen.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+        </div>
+        <div class="child6">
+            <div class="square"><img width="50" height="50" src="https://img.icons8.com/ios-filled/50/bishop.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/></div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square"><img width="50" height="50" src="https://img.icons8.com/ios/50/bishop.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/></div>
+        </div>
+        <div class="child7">
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/knight.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/knight.png" alt="undefined" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+        </div>
+        <div class="child8">
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/rook.png" alt="rook" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/pawn.png" alt="pawn" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+            <div class="square">
+                <img width="50" height="50" src="https://img.icons8.com/ios/50/rook.png" alt="rook" style="padding-top: 20%;padding-left: 25%;"/>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
