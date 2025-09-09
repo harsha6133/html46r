@@ -1,0 +1,56 @@
+.card {
+    display: flex;
+    gap: 20px;
+    height: auto;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-wrap: wrap; 
+    background-color: blue;
+}
+
+.side1 {
+    display: block;
+    color: white;
+}
+
+
+@media screen and (min-width: 768px) {
+    .card {
+        flex-direction: row; 
+        text-align: left;
+    }
+
+    .side1 {
+        order: 1;
+    }
+
+    .side2 {
+        order: 2;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        background-color: aqua;
+    }
+
+    .side2 {
+        order: 1;
+    }
+
+    .side1 {
+        order: 2;
+        
+    }
+
+    .heading {
+        margin-top: 10px;
+    }
+
+    .para {
+        margin-top: 5px;
+    }
+}
