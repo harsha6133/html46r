@@ -1,0 +1,127 @@
+/* 🌈 Page Layout */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ABE2, #5563DE);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* 📦 Main Container */
+.main-container {
+  background: #fff;
+  width: 90%;
+  max-width: 550px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.main-container h1 {
+  color: #3B3B98;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #555;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+/* 🕒 Timer */
+#timer {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #e63946;
+}
+
+/* 🧠 Question Container */
+#question {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* 🧩 Options */
+.option {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background-color: #d9e4ff;
+  transform: scale(1.02);
+}
+
+/* ✅ Correct / ❌ Wrong colors handled in JS */
+
+/* 🚀 Start / Next Button */
+#startBtn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #5563DE;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#startBtn:hover {
+  background-color: #3944BC;
+  transform: scale(1.05);
+}
+
+/* 🏁 Result */
+#result {
+  font-size: 22px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+#correct {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+#wrong {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+#attempt {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+/* 📱 Responsive */
+@media (max-width: 480px) {
+  .main-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  #question {
+    font-size: 18px;
+  }
+
+  .option {
+    font-size: 15px;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main-container">
+    <div id="instruction-container">
+      <h1>📘 Instructions</h1>
+      <p>✅ Each correct answer gives <strong>+2 marks</strong>.</p>
+      <p>❌ Each wrong answer deducts <strong>1 mark</strong>.</p>
+      <p>🕒 Total time: <strong>5 minutes</strong>.</p>
+    </div>
+
+    <div id="question-container">
+      <div id="timer">Time Left: 5:00</div>
+      <h1 id="question">Question</h1>
+      <button class="option">Option 1</button>
+      <button class="option">Option 2</button>
+      <button class="option">Option 3</button>
+      <button class="option">Option 4</button>
+    </div>
+
+    <div id="result-container">
+      <h1 id="result">Result</h1>
+      <p id="attempt"></p>
+      <p id="correct"></p>
+      <p id="wrong"></p>
+      <p></p>
+    </div>
+
+    <button id="startBtn">Start</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
