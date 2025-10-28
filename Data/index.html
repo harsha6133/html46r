@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <input type="text" id="username" placeholder="Enter Name">
+    <input type="text" id="batch" placeholder="Enter Batch">
+    <input type="text" id="city" placeholder="Enter City">
+    <button id="btn">Add</button>
+  </div>
+
+  <div class="div2">
+    <input type="text" id="delete" placeholder="Enter Name">
+    <button id="delbtn">Delete</button>
+    <input type="text" id="update" placeholder="Enter Name">
+    <button id="upbtn">Update</button>
+    <button id="savebtn">Save</button>
+  </div>
+
+  <div class="div3">
+    <label>Select By:</label>
+    <select name="search" id="srcBy">
+      <option value=""></option>
+      <option value="username">Name</option>
+      <option value="batch">Batch</option>
+      <option value="city">City</option>
+    </select>
+    <input type="text" id="search" placeholder="Enter Name">
+    <button id="searchbtn">Search</button>
+    <button id="undobtn">Undo</button>
+    <button id="show">Show Data</button>
+  </div>
+
+  <table id="table"></table>
+
+<script src="index.js"></script>
+</body>
+</html>
