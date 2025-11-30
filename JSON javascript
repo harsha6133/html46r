@@ -1,0 +1,47 @@
+let cart = [];
+
+function addToCart(name, price, quantity) {
+    const item = {
+        id: Date.now(),
+        name,
+        price,
+        quantity
+    };
+    cart.push(item);
+    console.log("Item Added:", item);
+}
+
+function getCart() {
+    console.log("Cart Items:", cart);
+    return cart;
+}
+
+function updateCartItem(id, newData) {
+    let item = cart.find(i => i.id === id);
+    if (!item) {
+        console.log("Item not found");
+        return;
+    }
+    item.name = newData.name ?? item.name;
+    item.price = newData.price ?? item.price;
+    item.quantity = newData.quantity ?? item.quantity;
+    console.log("Item Updated:", item);
+}
+
+function deleteCartItem(id) {
+    cart = cart.filter(item => item.id !== id);
+    console.log("Item Deleted. Current Cart:", cart);
+}
+
+addToCart("Shoes", 1500, 1);
+addToCart("Watch", 2000, 1);
+
+getCart();
+
+const idToUpdate = cart[0].id;
+updateCartItem(idToUpdate, { quantity: 3 });
+
+const idToDelete = cart[1].id;
+deleteCartItem(idToDelete);
+
+getCart();
